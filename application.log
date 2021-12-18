@@ -1,0 +1,87 @@
+2021-12-18 11:12:19,206  INFO [main] BlazeDemoStartPage:27 - Select Departure City from drop down as Boston
+2021-12-18 11:12:19,570  INFO [main] PropertiesFileManager:93 - setting key <FROM_CITY> and value <Boston>
+2021-12-18 11:12:19,580  INFO [main] BlazeDemoStartPage:34 - Select Destination City from drop down as Rome
+2021-12-18 11:12:19,913  INFO [main] PropertiesFileManager:93 - setting key <TO_CITY> and value <Rome>
+2021-12-18 11:12:19,919  INFO [main] BlazeDemoStartPage:40 - Click on Search Flight Button
+2021-12-18 11:12:20,868  INFO [main] SelectFlightPage:43 - Selecting Cheapest flight available in table
+2021-12-18 11:12:21,224  INFO [main] SelectFlightPage:51 - Cheapest flight Price=$200.98
+2021-12-18 11:12:21,225  INFO [main] SelectFlightPage:53 - Cheapest flight index=3
+2021-12-18 11:12:22,033  INFO [main] FlightReservedPage:35 - Enter username
+2021-12-18 11:12:22,269  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:12:22,534  INFO [main] FlightReservedPage:39 - Enter Address
+2021-12-18 11:12:22,639  INFO [main] ElementUtil:67 - Entering Text in Field=123 St Mount Road
+2021-12-18 11:12:22,810  INFO [main] FlightReservedPage:43 - Enter City name
+2021-12-18 11:12:22,934  INFO [main] ElementUtil:67 - Entering Text in Field=Berlin
+2021-12-18 11:12:23,066  INFO [main] FlightReservedPage:47 - Enter State Name
+2021-12-18 11:12:23,250  INFO [main] ElementUtil:67 - Entering Text in Field=Brandenburg
+2021-12-18 11:12:23,421  INFO [main] FlightReservedPage:51 - Enter ZipCode
+2021-12-18 11:12:23,574  INFO [main] ElementUtil:67 - Entering Text in Field=41101
+2021-12-18 11:12:28,793  INFO [main] FlightReservedPage:57 - Select Card Type=American Express
+2021-12-18 11:12:29,032  INFO [main] FlightReservedPage:61 - Enter Credit Card NO
+2021-12-18 11:12:29,171  INFO [main] ElementUtil:67 - Entering Text in Field=5555555555554444
+2021-12-18 11:12:29,392  INFO [main] FlightReservedPage:65 - Enter Card Expiry Month
+2021-12-18 11:12:29,537  INFO [main] ElementUtil:67 - Entering Text in Field=12
+2021-12-18 11:12:29,675  INFO [main] FlightReservedPage:69 - Enter Card Expiry Year
+2021-12-18 11:12:29,797  INFO [main] ElementUtil:67 - Entering Text in Field=2025
+2021-12-18 11:12:29,942  INFO [main] FlightReservedPage:73 - Enter Name On Card
+2021-12-18 11:12:30,075  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:12:32,133  INFO [main] PropertiesFileManager:93 - setting key <PURCHASE_ID> and value <1639806151401>
+2021-12-18 11:12:38,287  INFO [main] BlazeDemoStartPage:27 - Select Departure City from drop down as Portland
+2021-12-18 11:12:38,567  INFO [main] PropertiesFileManager:93 - setting key <FROM_CITY> and value <Portland>
+2021-12-18 11:12:38,575  INFO [main] BlazeDemoStartPage:34 - Select Destination City from drop down as London
+2021-12-18 11:12:38,764  INFO [main] PropertiesFileManager:93 - setting key <TO_CITY> and value <London>
+2021-12-18 11:12:38,767  INFO [main] BlazeDemoStartPage:40 - Click on Search Flight Button
+2021-12-18 11:12:39,483  INFO [main] SelectFlightPage:43 - Selecting Cheapest flight available in table
+2021-12-18 11:12:39,833  INFO [main] SelectFlightPage:51 - Cheapest flight Price=$200.98
+2021-12-18 11:12:39,834  INFO [main] SelectFlightPage:53 - Cheapest flight index=3
+2021-12-18 11:12:40,779  INFO [main] FlightReservedPage:35 - Enter username
+2021-12-18 11:12:40,882  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:12:41,119  INFO [main] FlightReservedPage:39 - Enter Address
+2021-12-18 11:12:41,235  INFO [main] ElementUtil:67 - Entering Text in Field=123 St Mount Road
+2021-12-18 11:12:41,439  INFO [main] FlightReservedPage:43 - Enter City name
+2021-12-18 11:12:41,566  INFO [main] ElementUtil:67 - Entering Text in Field=Berlin
+2021-12-18 11:12:41,691  INFO [main] FlightReservedPage:47 - Enter State Name
+2021-12-18 11:12:41,862  INFO [main] ElementUtil:67 - Entering Text in Field=Brandenburg
+2021-12-18 11:12:42,004  INFO [main] FlightReservedPage:51 - Enter ZipCode
+2021-12-18 11:12:42,150  INFO [main] ElementUtil:67 - Entering Text in Field=41101
+2021-12-18 11:12:47,287  INFO [main] FlightReservedPage:57 - Select Card Type=American Express
+2021-12-18 11:12:47,460  INFO [main] FlightReservedPage:61 - Enter Credit Card NO
+2021-12-18 11:12:47,648  INFO [main] ElementUtil:67 - Entering Text in Field=5555555555554444
+2021-12-18 11:12:47,795  INFO [main] FlightReservedPage:65 - Enter Card Expiry Month
+2021-12-18 11:12:47,944  INFO [main] ElementUtil:67 - Entering Text in Field=12
+2021-12-18 11:12:48,063  INFO [main] FlightReservedPage:69 - Enter Card Expiry Year
+2021-12-18 11:12:48,215  INFO [main] ElementUtil:67 - Entering Text in Field=2025
+2021-12-18 11:12:48,344  INFO [main] FlightReservedPage:73 - Enter Name On Card
+2021-12-18 11:12:48,491  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:12:50,272  INFO [main] PropertiesFileManager:93 - setting key <PURCHASE_ID> and value <1639806169436>
+2021-12-18 11:13:00,188  INFO [main] BlazeDemoStartPage:27 - Select Departure City from drop down as Portland
+2021-12-18 11:13:00,660  INFO [main] PropertiesFileManager:93 - setting key <FROM_CITY> and value <Portland>
+2021-12-18 11:13:00,665  INFO [main] BlazeDemoStartPage:34 - Select Destination City from drop down as New York
+2021-12-18 11:13:00,977  INFO [main] PropertiesFileManager:93 - setting key <TO_CITY> and value <New York>
+2021-12-18 11:13:00,979  INFO [main] BlazeDemoStartPage:40 - Click on Search Flight Button
+2021-12-18 11:13:02,713  INFO [main] FlightReservedPage:35 - Enter username
+2021-12-18 11:13:02,744  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:13:02,786  INFO [main] FlightReservedPage:39 - Enter Address
+2021-12-18 11:13:02,814  INFO [main] ElementUtil:67 - Entering Text in Field=123 St Mount Road
+2021-12-18 11:13:02,848  INFO [main] FlightReservedPage:43 - Enter City name
+2021-12-18 11:13:02,880  INFO [main] ElementUtil:67 - Entering Text in Field=Berlin
+2021-12-18 11:13:02,966  INFO [main] FlightReservedPage:47 - Enter State Name
+2021-12-18 11:13:03,020  INFO [main] ElementUtil:67 - Entering Text in Field=Brandenburg
+2021-12-18 11:13:03,051  INFO [main] FlightReservedPage:51 - Enter ZipCode
+2021-12-18 11:13:03,109  INFO [main] ElementUtil:67 - Entering Text in Field=41101
+2021-12-18 11:13:08,175  INFO [main] FlightReservedPage:57 - Select Card Type=American Express
+2021-12-18 11:13:08,462  INFO [main] FlightReservedPage:61 - Enter Credit Card NO
+2021-12-18 11:13:08,488  INFO [main] ElementUtil:67 - Entering Text in Field=5555555555554444
+2021-12-18 11:13:08,517  INFO [main] FlightReservedPage:65 - Enter Card Expiry Month
+2021-12-18 11:13:08,553  INFO [main] ElementUtil:67 - Entering Text in Field=12
+2021-12-18 11:13:08,575  INFO [main] FlightReservedPage:69 - Enter Card Expiry Year
+2021-12-18 11:13:08,621  INFO [main] ElementUtil:67 - Entering Text in Field=2025
+2021-12-18 11:13:08,646  INFO [main] FlightReservedPage:73 - Enter Name On Card
+2021-12-18 11:13:08,672  INFO [main] ElementUtil:67 - Entering Text in Field=Sam jones
+2021-12-18 11:13:09,999  INFO [main] PropertiesFileManager:93 - setting key <PURCHASE_ID> and value <1639806189844>
+2021-12-18 11:13:23,100  INFO [main] BlazeDemoStartPage:27 - Select Departure City from drop down as Paris
+2021-12-18 11:13:23,397  INFO [main] PropertiesFileManager:93 - setting key <FROM_CITY> and value <Paris>
+2021-12-18 11:13:23,402  INFO [main] BlazeDemoStartPage:34 - Select Destination City from drop down as Cairo
+2021-12-18 11:13:23,685  INFO [main] PropertiesFileManager:93 - setting key <TO_CITY> and value <Cairo>
+2021-12-18 11:13:23,688  INFO [main] BlazeDemoStartPage:40 - Click on Search Flight Button
+2021-12-18 11:13:24,737  INFO [main] ElementUtil:26 - Website Page Title=BlazeDemo - reserve

@@ -2,7 +2,6 @@ target/*
 .DS_Store
 .idea/*
 *.iml
-Report.json
 src/test/java/output/*.java
 /build/
 # General
@@ -12,8 +11,7 @@ src/test/java/output/*.java
 .classpath
 .project
 .settings/*
-.log
-application.log
+
 
 # Icon must end with two \r
 Icon
