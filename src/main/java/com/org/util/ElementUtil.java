@@ -1,5 +1,6 @@
 package com.org.util;
 
+import java.time.Duration;
 import java.util.List;
 
 import com.org.helper.LoggerHelper;
@@ -46,7 +47,7 @@ public class ElementUtil {
 
 	public void doClickIfPresent(By locator) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 			WebElement wb = getElement(locator);
 			log.info("Clicking WebElement If present");
@@ -80,7 +81,7 @@ public class ElementUtil {
 	}
 
 	public WebElement waitTillDisplay(By locator, int timeOut) {
-		WebDriverWait wait = new WebDriverWait(driver, timeOut);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
@@ -125,7 +126,7 @@ public class ElementUtil {
 
 	public void clickOnSearchResult(By locator){
 		List<WebElement> filterOption = getElements(locator);
-		WebDriverWait wait=new WebDriverWait(driver,5);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		WebElement element=filterOption.getFirst();
 		try {
 			log.info("Clicking on first result using JS executor ="+element.getText());

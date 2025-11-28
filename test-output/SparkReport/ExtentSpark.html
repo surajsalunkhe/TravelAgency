@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title></title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
 <style type="text/css"></style></head><body class="spa bdd-report standard">
   <div class="app">
     <div class="layout">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 28, 2025 10:07:15 AM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 28, 2025 10:13:38 AM</span></a>
 </li>
 </ul>
 </div>
@@ -76,6 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -84,32 +85,34 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@sanity</a>
+<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Book the Cheapest flight from Boston to Rome on Chrome</p>
             <p class="text-sm">
-              <span>10:07:16 AM</span> / <span>00:00:57:737</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:13:38 AM</span> / <span>00:00:21:846</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Book the Cheapest flight from Boston to Rome on Chrome</h5>
-<span class='badge badge-success'>11.28.2025 10:07:16</span>
-<span class='badge badge-danger'>11.28.2025 10:08:14</span>
-<span class='badge badge-default'>00:00:57:737</span>
+<h5 class="test-status text-pass">Book the Cheapest flight from Boston to Rome on Chrome</h5>
+<span class='badge badge-success'>11.28.2025 10:13:38 AM</span>
+<span class='badge badge-danger'>11.28.2025 10:14:00 AM</span>
+<span class='badge badge-default'>00:00:21:846</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -118,127 +121,60 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
-                  <div class="step fail-bg">
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
                     <span>Given User opens the "chrome" browser</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 142.0.7444.176 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EPINPUNW0874', ip: '2402:e280:3e71:777:c0b4:d795:3170:da20%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.8.2', java.version: '1.8.0_452'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x00000001050da6b8 chromedriver + 4937400
-1   chromedriver                        0x00000001050d1b73 chromedriver + 4901747
-2   chromedriver                        0x0000000104c8f616 chromedriver + 435734
-3   chromedriver                        0x0000000104cc1d10 chromedriver + 642320
-4   chromedriver                        0x0000000104cbd18a chromedriver + 622986
-5   chromedriver                        0x0000000104cb967c chromedriver + 607868
-6   chromedriver                        0x0000000104d00a08 chromedriver + 899592
-7   chromedriver                        0x0000000104cffebf chromedriver + 896703
-8   chromedriver                        0x0000000104cf6de3 chromedriver + 859619
-9   chromedriver                        0x0000000104cc4d7f chromedriver + 654719
-10  chromedriver                        0x0000000104cc60de chromedriver + 659678
-11  chromedriver                        0x00000001050962ad chromedriver + 4657837
-12  chromedriver                        0x000000010509b130 chromedriver + 4677936
-13  chromedriver                        0x00000001050a1def chromedriver + 4705775
-14  chromedriver                        0x000000010509c05a chromedriver + 4681818
-15  chromedriver                        0x000000010506e92c chromedriver + 4495660
-16  chromedriver                        0x00000001050b9838 chromedriver + 4802616
-17  chromedriver                        0x00000001050b99b7 chromedriver + 4802999
-18  chromedriver                        0x00000001050ca99f chromedriver + 4872607
-19  libsystem_pthread.dylib             0x00007ff8191f811f _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff8191f3ac3 thread_start + 15
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
-	at com.org.driverFactory.DriverFactory.init_Driver(DriverFactory.java:41)
-	at stepDefination.StepDefination.user_open_browser(StepDefination.java:26)
-	at ✽.User opens the "chrome" browser(file:///Users/suraj_shivajisalunkhe/TravelAgency/./src/test/resources/featureFiles/CheapestFlightBooking.feature:4)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And Navigate to url "blazedemo"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User select "Boston" from departure city dropdown</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User select "Rome" from destination city dropdown</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When User click on search flight button</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When User select cheapest flight from flight list</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User fill the details to purchase ticket</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then User verify confirmation page and save confirmation Id</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then User quit the browser</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at appHooks.ApplicationHook.captureScreenshot(ApplicationHook.java:39)
-</textarea>
-      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User select "Boston" from departure city dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User select "Rome" from destination city dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on search flight button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User select cheapest flight from flight list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User fill the details to purchase ticket</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User verify confirmation page and save confirmation Id</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User quit the browser</span>
+      <div>
       </div>
                   </div>
               </div>
@@ -246,120 +182,53 @@ remote stacktrace: 0   chromedriver                        0x00000001050da6b8 ch
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
+                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>: Book the Cheapest flight from Boston to Rome and Portland to London</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
-                  <div class="step fail-bg">
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
                     <span>Given User opens the "Extent.propertiesfirefox" browser</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 142.0.7444.176 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EPINPUNW0874', ip: '2402:e280:3e71:777:c0b4:d795:3170:da20%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.8.2', java.version: '1.8.0_452'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x00000001045a36b8 chromedriver + 4937400
-1   chromedriver                        0x000000010459ab73 chromedriver + 4901747
-2   chromedriver                        0x0000000104158616 chromedriver + 435734
-3   chromedriver                        0x000000010418ad10 chromedriver + 642320
-4   chromedriver                        0x000000010418618a chromedriver + 622986
-5   chromedriver                        0x000000010418267c chromedriver + 607868
-6   chromedriver                        0x00000001041c9a08 chromedriver + 899592
-7   chromedriver                        0x00000001041c8ebf chromedriver + 896703
-8   chromedriver                        0x00000001041bfde3 chromedriver + 859619
-9   chromedriver                        0x000000010418dd7f chromedriver + 654719
-10  chromedriver                        0x000000010418f0de chromedriver + 659678
-11  chromedriver                        0x000000010455f2ad chromedriver + 4657837
-12  chromedriver                        0x0000000104564130 chromedriver + 4677936
-13  chromedriver                        0x000000010456adef chromedriver + 4705775
-14  chromedriver                        0x000000010456505a chromedriver + 4681818
-15  chromedriver                        0x000000010453792c chromedriver + 4495660
-16  chromedriver                        0x0000000104582838 chromedriver + 4802616
-17  chromedriver                        0x00000001045829b7 chromedriver + 4802999
-18  chromedriver                        0x000000010459399f chromedriver + 4872607
-19  libsystem_pthread.dylib             0x00007ff8191f811f _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff8191f3ac3 thread_start + 15
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at com.org.driverFactory.DriverFactory.init_Driver(DriverFactory.java:53)
-	at stepDefination.StepDefination.user_open_browser(StepDefination.java:26)
-	at ✽.User opens the "Extent.propertiesfirefox" browser(file:///Users/suraj_shivajisalunkhe/TravelAgency/./src/test/resources/featureFiles/CheapestFlightBooking.feature:4)
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And Navigate to url "blazedemo"</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User select "Portland" from departure city dropdown</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User select "London" from destination city dropdown</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When User click on search flight button</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>When User select cheapest flight from flight list</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>And User fill the details to purchase ticket</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then User verify confirmation page and save confirmation Id</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step skip-bg">
-                    <span>Then User quit the browser</span>
-      <div>Step skipped
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at appHooks.ApplicationHook.captureScreenshot(ApplicationHook.java:39)
-</textarea>
-      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User select "Portland" from departure city dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User select "London" from destination city dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User click on search flight button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User select cheapest flight from flight list</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User fill the details to purchase ticket</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User verify confirmation page and save confirmation Id</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User quit the browser</span>
+      <div>
       </div>
                   </div>
               </div>
@@ -376,7 +245,7 @@ remote stacktrace: 0   chromedriver                        0x00000001045a36b8 ch
           <div class="test-detail">
             <p class="name">Book the Costliest flight from Portland to New York on Firefox</p>
             <p class="text-sm">
-              <span>10:08:14 AM</span> / <span>00:00:02:189</span>
+              <span>10:14:00 AM</span> / <span>00:00:01:374</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -385,10 +254,12 @@ remote stacktrace: 0   chromedriver                        0x00000001045a36b8 ch
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Book the Costliest flight from Portland to New York on Firefox</h5>
-<span class='badge badge-success'>11.28.2025 10:08:14</span>
-<span class='badge badge-danger'>11.28.2025 10:08:16</span>
-<span class='badge badge-default'>00:00:02:189</span>
+<span class='badge badge-success'>11.28.2025 10:14:00 AM</span>
+<span class='badge badge-danger'>11.28.2025 10:14:01 AM</span>
+<span class='badge badge-default'>00:00:01:374</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -411,16 +282,27 @@ remote stacktrace: 0   chromedriver                        0x00000001045a36b8 ch
                   <div class="step fail-bg">
                     <span>Given User opens the "firefox" browser</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EPINPUNW0874', ip: '2402:e280:3e71:777:c0b4:d795:3170:da20%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.8.2', java.version: '1.8.0_452'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-	at java.util.Optional.orElseGet(Optional.java:267)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
+Host info: host: 'EPINPUNW0874', ip: '2402:e280:3e71:777:c0b4:d795:3170:da20%en0'
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.8.2', java.version: '21.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {remote.active-protocols: 3}}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
 	at com.org.driverFactory.DriverFactory.init_Driver(DriverFactory.java:46)
 	at stepDefination.StepDefination.user_open_browser(StepDefination.java:26)
 	at ✽.User opens the "firefox" browser(file:///Users/suraj_shivajisalunkhe/TravelAgency/./src/test/resources/featureFiles/CostliestFlightFlightBooking.feature:4)
@@ -471,7 +353,19 @@ Driver info: driver.version: FirefoxDriver
                   <div class="step fail-bg">
                     <span>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.8.2', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: /var/folders/cx/1_64tl2n2p3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56779}, goog:processID: 52829, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56779/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
 	at appHooks.ApplicationHook.captureScreenshot(ApplicationHook.java:39)
 </textarea>
       
@@ -484,26 +378,28 @@ Driver info: driver.version: FirefoxDriver
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="38"
+        <li class="test-item"  status="pass" test-id="38"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Verify the flight reservation page</p>
             <p class="text-sm">
-              <span>10:08:16 AM</span> / <span>00:00:06:894</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:14:01 AM</span> / <span>00:00:02:833</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Verify the flight reservation page</h5>
-<span class='badge badge-success'>11.28.2025 10:08:16</span>
-<span class='badge badge-danger'>11.28.2025 10:08:23</span>
-<span class='badge badge-default'>00:00:06:894</span>
+<h5 class="test-status text-pass">Verify the flight reservation page</h5>
+<span class='badge badge-success'>11.28.2025 10:14:01 AM</span>
+<span class='badge badge-danger'>11.28.2025 10:14:04 AM</span>
+<span class='badge badge-default'>00:00:02:833</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -512,111 +408,44 @@ Driver info: driver.version: FirefoxDriver
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="39"><span class="badge log fail-bg mr-2">Fail</span>Verify Page title on Flight reservation page</div>
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Verify Page title on Flight reservation page</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="stepDefination.StepDefination.user_open_browser(java.lang.String)">
+              <div class="step pass-bg" title="stepDefination.StepDefination.user_open_browser(java.lang.String)">
                 <span>Given User opens the "chrome" browser</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 142.0.7444.176 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EPINPUNW0874', ip: '2402:e280:3e71:777:c0b4:d795:3170:da20%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.8.2', java.version: '1.8.0_452'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010309c6b8 chromedriver + 4937400
-1   chromedriver                        0x0000000103093b73 chromedriver + 4901747
-2   chromedriver                        0x0000000102c51616 chromedriver + 435734
-3   chromedriver                        0x0000000102c83d10 chromedriver + 642320
-4   chromedriver                        0x0000000102c7f18a chromedriver + 622986
-5   chromedriver                        0x0000000102c7b67c chromedriver + 607868
-6   chromedriver                        0x0000000102cc2a08 chromedriver + 899592
-7   chromedriver                        0x0000000102cc1ebf chromedriver + 896703
-8   chromedriver                        0x0000000102cb8de3 chromedriver + 859619
-9   chromedriver                        0x0000000102c86d7f chromedriver + 654719
-10  chromedriver                        0x0000000102c880de chromedriver + 659678
-11  chromedriver                        0x00000001030582ad chromedriver + 4657837
-12  chromedriver                        0x000000010305d130 chromedriver + 4677936
-13  chromedriver                        0x0000000103063def chromedriver + 4705775
-14  chromedriver                        0x000000010305e05a chromedriver + 4681818
-15  chromedriver                        0x000000010303092c chromedriver + 4495660
-16  chromedriver                        0x000000010307b838 chromedriver + 4802616
-17  chromedriver                        0x000000010307b9b7 chromedriver + 4802999
-18  chromedriver                        0x000000010308c99f chromedriver + 4872607
-19  libsystem_pthread.dylib             0x00007ff8191f811f _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff8191f3ac3 thread_start + 15
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
-	at com.org.driverFactory.DriverFactory.init_Driver(DriverFactory.java:41)
-	at stepDefination.StepDefination.user_open_browser(StepDefination.java:26)
-	at ✽.User opens the "chrome" browser(file:///Users/suraj_shivajisalunkhe/TravelAgency/./src/test/resources/featureFiles/FlightReservPage.feature:4)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.login_to_url(java.lang.String)">
+              <div class="step pass-bg" title="stepDefination.StepDefination.login_to_url(java.lang.String)">
                 <span>And Navigate to url "blazedemo"</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.user_select_from_departure_city_dropdown(java.lang.String)">
-                <span>And User select "Paris" from departure city dropdown</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.user_select_from_destination_city_dropdown(java.lang.String)">
-                <span>And User select "Cairo" from destination city dropdown</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.user_click_on_search_button()">
-                <span>When User click on search flight button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.verify_flight_reservation_page()">
-                <span>Then User verify flight reservation page</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefination.StepDefination.user_quit_the_browser()">
-                <span>Then User quit the browser</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at appHooks.ApplicationHook.captureScreenshot(ApplicationHook.java:39)
-</textarea>
-      
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefination.StepDefination.user_select_from_departure_city_dropdown(java.lang.String)">
+                <span>And User select "Paris" from departure city dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefination.StepDefination.user_select_from_destination_city_dropdown(java.lang.String)">
+                <span>And User select "Cairo" from destination city dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefination.StepDefination.user_click_on_search_button()">
+                <span>When User click on search flight button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefination.StepDefination.verify_flight_reservation_page()">
+                <span>Then User verify flight reservation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefination.StepDefination.user_quit_the_browser()">
+                <span>Then User quit the browser</span>
+      <div>
       </div>
               </div>
           </div>
@@ -638,112 +467,10 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='25' id='28'>Given User opens the "firefox" browser</a>
-<div class="">
-<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York.Given User opens the "firefox" browser</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London.appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='24'>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London.appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:16 AM</td>
-<td>
-<a href="#" class="linked" test-id='25' id='37'>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York.appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='38' id='47'>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Verify the flight reservation page.Verify Page title on Flight reservation page.appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -768,31 +495,47 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:07:16 AM</td>
+<td>10:14:00 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='4'>Given User opens the "chrome" browser</a>
+<a href="#" class="linked" test-id='25' id='28'>Given User opens the "firefox" browser</a>
 <div class="">
-<span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London.Given User opens the "chrome" browser</span>
+<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York.Given User opens the "firefox" browser</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:07 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='15'>Given User opens the "Extent.propertiesfirefox" browser</a>
-<div class="">
-<span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London.Given User opens the "Extent.propertiesfirefox" browser</span>
+</tbody>
+</table>
 </div>
-</td>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchSessionException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchSessionException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
 </tr>
+</thead>
+<tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:16 AM</td>
+<td>10:14:01 AM</td>
 <td>
-<a href="#" class="linked" test-id='38' id='40'>Given User opens the "chrome" browser</a>
+<a href="#" class="linked" test-id='25' id='37'>appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</a>
 <div class="">
-<span class="badge badge-default">Verify the flight reservation page.Verify Page title on Flight reservation page.Given User opens the "chrome" browser</span>
+<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York.appHooks.ApplicationHook.captureScreenshot(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
@@ -819,15 +562,15 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>4</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@regression</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">@sanity</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -838,9 +581,9 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:07:16 AM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:13:38 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>: Book the Cheapest flight from Boston to Rome and Portland to London</a>
 <div class="">
@@ -848,33 +591,13 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:07 AM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:13:50 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='14'>: Book the Cheapest flight from Boston to Rome and Portland to London</a>
 <div class="">
 <span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:14 AM</td>
-<td>
-<a href="#" class="linked" test-id='25' id='27'>: Book the Costliest flight from Portland to New York</a>
-<div class="">
-<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:16 AM</td>
-<td>
-<a href="#" class="linked" test-id='38' id='39'>Verify Page title on Flight reservation page</a>
-<div class="">
-<span class="badge badge-default">Verify the flight reservation page.Verify Page title on Flight reservation page</span>
 </div>
 </td>
 </tr>
@@ -885,15 +608,17 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@sanity</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@regression</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@sanity</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -904,9 +629,9 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:07:16 AM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:13:38 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>: Book the Cheapest flight from Boston to Rome and Portland to London</a>
 <div class="">
@@ -914,13 +639,33 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:08:07 AM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:13:50 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='14'>: Book the Cheapest flight from Boston to Rome and Portland to London</a>
 <div class="">
 <span class="badge badge-default">Book the Cheapest flight from Boston to Rome on Chrome.: Book the Cheapest flight from Boston to Rome and Portland to London</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:14:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='27'>: Book the Costliest flight from Portland to New York</a>
+<div class="">
+<span class="badge badge-default">Book the Costliest flight from Portland to New York on Firefox.: Book the Costliest flight from Portland to New York</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:14:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='38' id='39'>Verify Page title on Flight reservation page</a>
+<div class="">
+<span class="badge badge-default">Verify the flight reservation page.Verify Page title on Flight reservation page</span>
 </div>
 </td>
 </tr>
@@ -941,25 +686,25 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 28, 2025 10:07:15 AM</h3>
+<h3>Nov 28, 2025 10:13:38 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 28, 2025 10:08:23 AM</h3>
+<h3>Nov 28, 2025 10:14:04 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>3</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -975,12 +720,12 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>3</b> features failed,
+<small data-tooltip='33%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -998,9 +743,9 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>4</b> scenarios failed,
+<small data-tooltip='25%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1018,10 +763,10 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div><small data-tooltip='71%'><b>25</b> steps passed</small></div>
 <div>
-<small data-tooltip='21%'><b>8</b> steps failed,
-<b>30</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='5%'><b>2</b> steps failed,
+<b>8</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1037,7 +782,7 @@ remote stacktrace: 0   chromedriver                        0x000000010309c6b8 ch
 </div></div>
 <script>
 var timeline = {
-"Book the Cheapest flight from Boston to Rome on Chrome":57.737,"Book the Costliest flight from Portland to New York on Firefox":2.189,"Verify the flight reservation page":6.894
+"Book the Cheapest flight from Boston to Rome on Chrome":21.846,"Book the Costliest flight from Portland to New York on Firefox":1.374,"Verify the flight reservation page":2.833
 };
 </script>
 <div class="row">
@@ -1047,20 +792,20 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@regression</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
 <td>@sanity</td>
-<td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
 </tr>
 </tbody>
 </table></div>
@@ -1073,16 +818,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>TravelAgency Flight Booking Automation</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Suraj Salunkhe</td>
 </tr>
 <tr>
-<td>AppName</td>
-<td>TravelAgency Flight Booking Automation</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>os</td>
@@ -1097,21 +842,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 3,
+passParent: 2,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 4,
+passChild: 3,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 8,
+passGrandChild: 25,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 30,
+skipGrandChild: 8,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -1119,6 +864,6 @@ eventsCount: 5,
       </div>
     </div>
   </div>
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
 <script type="text/javascript"></script></body>
 </html>
