@@ -118,7 +118,7 @@ public class ElementUtil {
 	public void clickOnFirstElementFromList(By locator){
 		waitTillDisplay(locator,5);
 		List<WebElement> filterOption = getElements(locator);
-		WebElement element=filterOption.get(0);
+		WebElement element=filterOption.getFirst();
 		log.info("Clicking on first element from list ="+element.getText());
 		element.click();
 	}
@@ -126,7 +126,7 @@ public class ElementUtil {
 	public void clickOnSearchResult(By locator){
 		List<WebElement> filterOption = getElements(locator);
 		WebDriverWait wait=new WebDriverWait(driver,5);
-		WebElement element=filterOption.get(0);
+		WebElement element=filterOption.getFirst();
 		try {
 			log.info("Clicking on first result using JS executor ="+element.getText());
 			safeJavaScriptClick(element);
